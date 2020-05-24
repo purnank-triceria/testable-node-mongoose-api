@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "google",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "ignorePatterns": ["test/cache/**"],
+  "rules": {
+    "linebreak-style": "off",
+    "semi": "off",
+    "comma-dangle": "off",
+    "object-curly-spacing": "off",
+    "eol-last": ["error", "windows"],
+    "indent": [
+      "error",
+      2
+    ],
+    "comma-style": [
+      "error",
+      "first"
+    ],
+    "@typescript-eslint/interface-name-prefix": [
+      "error",
+      {
+        "prefixWithI": "always"
+      }
+    ]
+  }
+}
